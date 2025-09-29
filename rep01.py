@@ -39,6 +39,21 @@ def q3():
 #4. Faça um programa que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
+def q4():
+    for i in range(20):
+
+        nome = input('Digite seu nome: ')
+        idade = int(input('Digite sua idade: '))
+        sexo = input('Qual é seu sexo (M/F): ').upper()
+
+        print(f'\n----Pessoa {i+1}----')
+
+        if sexo == 'M' and idade > 21 :
+            print(f'Nome: {nome}')
+
+
+        print('----------\n')    
+        
 
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
