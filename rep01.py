@@ -58,6 +58,17 @@ def q4():
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
+def q5():
+    a = int(input('Digite o primeiro número (multiplicador): '))
+    b = int(input ('Digite o segundo número (multiplicador): '))
+
+    produto = 0
+
+    for _ in range(b):
+        produto += a
+
+    print(f'O produto de {a} por {b} é: {produto}')
+
 
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 #Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
@@ -65,6 +76,19 @@ def q4():
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
 # 1 1 2 3 5 8 13 21
+
+def q6():
+    termo1 = 1
+    termo2 = 1
+
+    print(termo1, termo2, end=' ')
+
+    for _ in range(18):
+        proximo = termo1 + termo2
+        print(proximo, end=' ')
+        termo1 = termo2
+        termo2 = proximo
+
 
 #7. Crie um programa que permita entrar com o nome, a nota da
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
