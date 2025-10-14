@@ -194,10 +194,30 @@ def q11():
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
 #número. O algoritmo encerra quando se digita um número menor do que 1.n
 
+def fatorial(n):
+    if n == 0  or  n == 1:
+        return 1
+    else:
+        return n*fatorial(n-1)  
+def q14():
+
+    n = 1
+    while n != 0:   
+        n = int(input('Digite um número: '))
+        print(fatorial(n))
+
+
 #15. Faça um programa que permita entrar com a idade de várias pessoas e
 #imprima:
 #• total de pessoas com menos de 21 anos
 #• total de pessoas com mais de 50 anos
+def q15():
+    idade = 1 
+    maior = 0
+    menor = 0
+
+    while idade > 0:
+        
 
 #16. Sabendo-se que a unidade lógica e aritmética calcula a divisão por meio de subtrações
 #sucessivas, criar um algoritmo que calcule e imprima o resto da divisão de
