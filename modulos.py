@@ -6,13 +6,33 @@ import random
 
 # 01- Crie um programa que leia um número real qualquer pelo teclado e mostre
 # na tela a sua porção inteira 
-
-
+def q1():
+    
+    num = float(input('Digite um número qualquer: '))
+    print('O valor digitado foi {} e a sua porção inteira é {}'.format(num, int(num)))
+    
 # 02- Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo 
 # retangulo, calcule e mostre o comprimento da hipotenusa
+def q2():
+    import math
+    co = float(input('Comprimento do cateto oposto: '))
+    ca = float(input('Comprimento do cateto adacente: '))
+    hi = math.hypot(co, ca)
+    print('A hipotenusa vai medir {:.2f}'.format(hi))
+    
 
-# 03- Faça um programa que leia um angulo qualquer e mostre na tela o valor da seno, cosseno
-# e tangente desse angulo 
+    # 03- Faça um programa que leia um angulo qualquer e mostre na tela o valor da seno, cosseno
+    # e tangente desse angulo 
+
+    def q3():
+        import math 
+        an = float(input('Digite o ângulo que você deseja: '))
+        seno = math.sin(math.radians(an))
+        print('O ângulo de {} tem o SENO de {:.2f}'.format(an, seno))
+        print('A hipotenusa vai medir {:.2f}'.format(hi))
+        cosseno = math.cos(math.radians(an))
+        print('O ângulo de {} tem o  COSSENO de{:.2f}'.format(an, cosseno))
+        tangente = math.tan(math.radians(an))
 
 # 04- Um professor quer sortea um dos seus quatros alunos para apagar o quadro. Faça um programa
 # que ajude ele, lendo o nome deles e escrevendo o nome escolhido 
